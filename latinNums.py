@@ -8,7 +8,7 @@ def intGoToLatin(num):
 
     while num > 0:
         for i, r in numsList:
-            while num >= i:
+            while num >= i and num < 1000000:
                 latinNum += r
                 num -= i
         return latinNum
